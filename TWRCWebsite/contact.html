@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
-        <section class="header">
+        <section class="sub-header">
             <nav>
                 <div class="nav-links" id="navLinks">
                     <i class="fa fa-times" onclick="hideMenu()"></i>
@@ -23,26 +23,24 @@
                 </div>
                 <i class="fa fa-bars" onclick="showMenu()"></i>
             </nav>
-            <div class="text-box">
-                <h1>Inspiring Leadership</h1>
-                <p>A club of future astronauts, engineers, physicists, and rocket scientists in high school working<br>together to make change and opportunity in the community of The Woodlands.</p>
-                <a href="about.html" class="hero-btn">Learn More</a>
-            </div>
+            <h1>Contact Us</h1>
         </section>
-        <section class="actions">
-            <h1>Our Actions</h1>
+        <section class="contact-us">
             <div class="row">
-                <div class="actions-col">
-                    <h3>Community Events</h3>
-                    <p>Whether we’re out at the baseball pitch launching rockets on the 4th of July, or indoors leading a digital seminar on physics, we’re always looking to be involved, inspiring, and uplifting The Woodlands.</p>
+                <div class="contact-col">
+                    <div class="contact-text">
+                        <h2>We’re always available to answer to any questions, comments, or concerns you have.</h2>
+                        <p>info@woodlandsrocketry.club</p>
+                        <p>The Woodlands, TX 77380</p>
+                    </div>
                 </div>
-                <div class="actions-col">
-                    <h3>Rocketry Competitions</h3>
-                    <p>We support model rocketry teams and clubs at middle and high schools to inspire students in STEM as they explore a competitive, teambuilding, fun environment tackling challenges in engineering design and construction.</p>
-                </div>
-                <div class="actions-col">
-                    <h3>Teaching Opportunities</h3>
-                    <p>We’re hosting workshops, webinars, launch events, and more, to inspire people of all ages towards the model rocketry hobby within The Woodlands.</p>
+                <div class="contact-col">
+                    <form action="form-handler.php" method="post">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                        <button type="submit" class="hero-btn red-btn">Submit</button>
+                    </form>
                 </div>
             </div>
         </section>
